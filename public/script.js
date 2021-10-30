@@ -2,7 +2,7 @@ const row = document.querySelector("#row");
 
 const apicall = async () => {
   const res = await fetch(
-    "https://newsapi.org/v2/top-headlines?country=us&apiKey=4275f573e8ba4f06be195172d387666a",
+    `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`,
     {
       method: "GET",
       headers: {
